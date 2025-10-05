@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR.js + A-Frame Example</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene
+      embedded
+      arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+      vr-mode-ui="enabled: false"
+    >
+      <!-- Marker -->
+      <a-marker type="pattern" url="markers/p_ami.patt">
+        <a-entity
+          gltf-model="models/ami.glb"
+          scale="0.5 0.5 0.5"
+          rotation="0 0 0"
+          animation-mixer
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 8000; easing: linear"
+        ></a-entity>
+      </a-marker>
+
+      <a-marker type="pattern" url="markers/p_mei.patt">
+        <a-entity
+          gltf-model="models/mei.glb"
+          scale="0.5 0.5 0.5"
+          rotation="0 0 0"
+          animation-mixer
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 8000; easing: linear"
+        ></a-entity>
+      </a-marker>
+
+      <a-marker type="pattern" url="markers/p_rea.patt">
+        <a-entity
+          gltf-model="models/rea.glb"
+          scale="0.5 0.5 0.5"
+          rotation="0 0 0"
+          animation-mixer
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 8000; easing: linear"
+        ></a-entity>
+      </a-marker>
+
+      <a-marker type="pattern" url="markers/p_rei.patt">
+        <a-entity
+          gltf-model="models/rei.glb"
+          scale="0.5 0.5 0.5"
+          rotation="0 0 0"
+          animation-mixer
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 8000; easing: linear"
+        ></a-entity>
+      </a-marker>
+
+      <a-marker type="pattern" url="markers/p_suzu.patt">
+        <a-entity
+          gltf-model="models/suzu.glb"
+          scale="0.5 0.5 0.5"
+          rotation="0 0 0"
+          animation-mixer
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 8000; easing: linear"
+        ></a-entity>
+      </a-marker>
+
+      <a-marker type="pattern" url="markers/p_yume.patt">
+        <a-entity
+          gltf-model="models/yume.glb"
+          scale="0.5 0.5 0.5"
+          rotation="0 0 0"
+          animation-mixer
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 8000; easing: linear"
+        ></a-entity>
+      </a-marker>
+
+      <!-- Camera -->
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
