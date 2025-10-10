@@ -191,7 +191,65 @@
         ></a-entity>
       </a-marker>
 
+      <a-marker
+        type="pattern"
+        url="markers/p_ri.patt"
+        smooth="true"
+        smoothCount="8"
+        smoothTolerance="0.01"
+        smoothThreshold="5"
+      >
+        <a-entity
+          id="model"
+          gltf-model="models/ri.glb"
+          scale="0.5 0.5 0.5"
+          rotation="0 0 0"
+          animation-mixer
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 8000; easing: linear"
+          fix-textures="anisotropy: 8; useMipmaps: false; minFilter: LinearMipmapLinearFilter"
+        ></a-entity>
+      </a-marker>
+
+      <a-marker
+        type="pattern"
+        url="markers/p_amu.patt"
+        smooth="true"
+        smoothCount="8"
+        smoothTolerance="0.01"
+        smoothThreshold="5"
+      >
+        <a-entity
+          id="model"
+          gltf-model="models/amu.glb"
+          scale="0.5 0.5 0.5"
+          rotation="0 0 0"
+          animation-mixer
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 8000; easing: linear"
+          fix-textures="anisotropy: 8; useMipmaps: false; minFilter: LinearMipmapLinearFilter"
+        ></a-entity>
+      </a-marker>
+
+      <a-marker
+        type="pattern"
+        url="markers/p_konatsu.patt"
+        smooth="true"
+        smoothCount="8"
+        smoothTolerance="0.01"
+        smoothThreshold="5"
+      >
+        <a-entity
+          id="model"
+          gltf-model="models/konatsu.glb"
+          scale="0.5 0.5 0.5"
+          rotation="0 0 0"
+          animation-mixer
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 8000; easing: linear"
+          fix-textures="anisotropy: 8; useMipmaps: false; minFilter: LinearMipmapLinearFilter"
+        ></a-entity>
+      </a-marker>
+      
       <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
+
